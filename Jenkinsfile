@@ -4,8 +4,13 @@ pipeline{
 
     stages{
 
-        stage("Continous Download"){
-            git branch: 'main', url: 'https://github.com/clemenrance/DEV-TEAM.git'
+        stage("C. Download"){
+
+            steps{
+                git branch: 'main', url: 'https://github.com/clemenrance/DEV-TEAM.git'
+            }
         }
+
     }
+
 }
