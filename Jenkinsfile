@@ -39,6 +39,15 @@ pipeline{
                 }
             }
         }
+        stage("Continous Delivery"){
+
+            steps{
+
+                script{
+                    sh 'cp -r /root/.jenkins/workspace/TRAINING/ /var/www/html/'
+                }
+            }
+        }
 
     }
 
